@@ -1,23 +1,21 @@
 /* Basic Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     line-height: 1.6;
+    background: #000;
+    color: #fff;
 }
 
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    background: #333;
+    padding: 2rem;
+    background: #000;
     color: #fff;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    border-bottom: 1px solid #333;
 }
 
 nav ul {
@@ -27,63 +25,76 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 1rem;
+    margin: 0 1.5rem;
 }
 
 nav a {
-    color: #fff;
+    color: #666;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #007bff;
+    color: #fff;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 8rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: #888;
+    line-height: 1.8;
 }
 
 .hero button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background: #007bff;
-    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    background: #fff;
+    color: #000;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .hero button:hover {
-    background: #0056b3;
+    background: #333;
+    color: #fff;
     transform: translateY(-2px);
 }
 
 .hero button:focus {
-    outline: 3px solid #0056b3;
+    outline: 2px solid #fff;
     outline-offset: 2px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 2rem 1rem;
-    background: #333;
-    color: #fff;
+    padding: 4rem 1rem;
+    background: #000;
+    color: #666;
+    border-top: 1px solid #333;
 }
 
 footer ul {
@@ -91,21 +102,23 @@ footer ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin-top: 1.5rem;
 }
 
 footer ul li {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 footer a {
-    color: #fff;
+    color: #666;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
 }
 
 footer a:hover,
 footer a:focus {
-    color: #007bff;
+    color: #fff;
 }
 
 /* Responsive Design */
